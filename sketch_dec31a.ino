@@ -1,12 +1,20 @@
 #include "Game.h"
 #include "Config.h"
 
-Game game;
+// Game game;
+
+// void setup() {
+//   game.init();
+// }
+
+// void loop() {
+//   game.update();
+// }
 
 void setup() {
-  game.init();
+  
 }
 
 void loop() {
-  game.update();
+
 }

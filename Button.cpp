@@ -1,7 +1,7 @@
 #include "Button.h"
 
 Button::Button(uint8_t pin)
-  : pin(pin), last(LOW), current(LOW), pressed(false) {}
+  : pin(pin), last(HIGH), current(HIGH), pressed(false) {}
 
 void Button::init() {
   pinMode(pin, INPUT);
@@ -9,7 +9,7 @@ void Button::init() {
 
 void Button::update() {
   current = digitalRead(pin);
-  pressed = (last == LOW && current == HIGH);
+  pressed = (last == HIGH && current == LOW);
   last = current;
 }
 
