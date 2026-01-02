@@ -8,6 +8,8 @@ public:
   void init();
   void update();
   bool wasPressed() const;
+  bool nowPressed() const;
+  bool updated() const;
 
 private:
   uint8_t pin;

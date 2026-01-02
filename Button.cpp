@@ -16,3 +16,11 @@ void Button::update() {
 bool Button::wasPressed() const {
   return pressed;
 }
+
+bool Button::nowPressed() const {
+  return current == LOW;
+}
+
+bool Button::updated() const {
+  return last != current;
+}
