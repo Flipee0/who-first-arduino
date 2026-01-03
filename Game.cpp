@@ -62,6 +62,7 @@ void Game::update() {
       break;
 
     case GameState::SIGNAL:
+      detectFalseStarts();
       if (!sound.isPlaying()) {
         setState(GameState::WAIT_ANSWER);
       }
